@@ -3,13 +3,11 @@ kind: Service
 metadata:
   name: elasticsearch
   labels:
-    component: elasticsearch
-    role: data
+    role: client
 spec:
   selector:
-    component: elasticsearch
-    role: data
+    role: client
   ports:
   - name: http
     port: 9200
-#type: LoadBalancer
+  type: NodePort
