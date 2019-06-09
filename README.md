@@ -4,7 +4,7 @@ This directory contains Kubernetes configurations which run elasticsearch data a
 
 ## Storage
 
-The [`es-data.yaml`](es-data.yaml) and [`es-master.yaml`](es-master.yaml) files contain `volumeClaimTemplates` sections which request 5GB volume for each master node, data node and client node. This is plenty of space for a demonstration cluster, but will fill up quickly under moderate to heavy load. Consider modifying the disk size to your needs.
+The [`es-data.yaml`](install/es-data.yaml) and [`es-master.yaml`](install/es-master.yaml) files contain `volumeClaimTemplates` sections which request 5GB volume for each master node, data node and client node. This is plenty of space for a demonstration cluster, but will fill up quickly under moderate to heavy load. Consider modifying the disk size to your needs.
 
 ## Deploy
 The root directory contains yaml files for deploying elasticsearch cluster and Kibana.
